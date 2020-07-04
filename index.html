@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="title">Budget App</div>
+            <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Infographics</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="layout">
+        <div class="container">
+            <section class="forms">
+                <main class="budget">
+                    <div class="feedbackBudget"></div>
+                    <form id="budget-form">
+                        <label for="budget">Enter Your Budget</label>
+                        <input type="number" id="budget-input" placeholder="Whats your budget?">
+                        <input type="submit" value="Place Budget">
+                    </form>
+                </main>
+                
+                <main class="expense">
+                    <div class="feedbackExpenses"></div>
+                    <form id="expense-form">
+                        <label for="expense">Enter Your Expense</label>
+                        <input type="text" id="expenseFor" placeholder="expense for?">
+                        <input type="number" id="expenses-input" placeholder="expence amount">
+                        <input type="submit" value="Add Expense">
+                    </form>
+                </main>
+            </section>
+            <section class="details">
+                <main class="section">
+                    <article>
+                        <h3>BUDGET</h3>
+                        <div class="budget-logo">
+                            <img src="./img/money.png">
+                        </div>
+                        <h4 class="budget-total green">
+                            <span>$ </span>
+                            <span id="budget-amount"></span>
+                        </h4>
+                    </article>
+                    <article>
+                        <h3>EXPENSES</h3>
+                        <div class="expenses-logo">
+                            <img src="./img/credit.png" class="red">
+                        </div>
+                        <h4 class="expenses-total red">
+                            <span>$ </span>
+                            <span id="expenses-amount">0</span>
+                        </h4>
+                    </article>
+                    <article>
+                        <h3>BALANCE</h3>
+                        <div class="balance-logo">
+                            <img src="./img/dollar.png">
+                        </div>
+                        <h4 class="balance-total blue">
+                            <span>$ </span>
+                            <span id="balance-amount">0</span>
+                        </h4>
+                    </article>
+                </main>
+                <main class="table">
+                    <table  border="0">
+                        <thead>
+                            <th width='10%'>S/N</th>
+                            <th width='40%'>Expense Title</th>
+                            <th width='20%'>Value</th>
+                            <th width='30%'><img src="./img/list.png" class="red"></th>
+                        </thead>
+
+                        <tbody id="tbody">
+                        
+                        </tbody>
+                    </table>
+                    <div class="giffy hide"><img src="./img/230X421.gif"></div>
+
+                </main>
+            </section>
+        </div>
+    </section>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
